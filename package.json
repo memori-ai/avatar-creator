@@ -1,0 +1,11 @@
+{
+  "name": "@memori.ai/avatar-creator",
+  "module": "src/index.tsx",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
