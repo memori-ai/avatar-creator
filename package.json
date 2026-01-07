@@ -2,10 +2,27 @@
   "name": "@memori.ai/avatar-creator",
   "module": "src/index.tsx",
   "type": "module",
+  "scripts": {
+    "dev": "bun run src/dev.tsx",
+    "lint": "biome check .",
+    "fix": "biome check --write .",
+    "check:staged": "biome check --staged",
+    "prepare": "husky"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "2.3.11",
+    "@commitlint/cli": "^20.3.0",
+    "@commitlint/config-conventional": "^20.3.0",
+    "@release-it/conventional-changelog": "^10.0.4",
+    "@types/bun": "latest",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "release-it": "^19.2.3"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@memori.ai/memori-react": "^8.13.5"
   }
 }
