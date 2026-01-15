@@ -1,7 +1,7 @@
 {
   "name": "@memori.ai/avatar-creator",
   "author": "Memori Srl",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "module": "src/index.tsx",
   "type": "module",
   "exports": {
