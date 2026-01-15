@@ -1,15 +1,33 @@
 .memori-avatar-creator {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .memori-avatar-creator-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gender-filters {
+    margin-bottom: 2rem;
+}
+
+.filters-title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.gender-filters [role="radio"]:first-of-type {
+    margin-right: 0.5em;
 }

@@ -19,12 +19,18 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      },
+      "a11y": {
+        "useSemanticElements": "warn"
+      },
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noArrayIndexKey": "off"
       }
     },
     "domains": {
-      "next": "recommended",
       "react": "recommended"
     }
   },
