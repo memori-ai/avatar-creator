@@ -1,5 +1,6 @@
 {
   "name": "@memori.ai/avatar-creator",
+  "author": "Memori Srl",
   "version": "0.1.0",
   "module": "src/index.tsx",
   "type": "module",
@@ -8,8 +9,19 @@
     "./styles.css": "./src/styles.css"
   },
   "files": [
-    "src"
+    "src",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
   ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/memori-ai/avatar-creator#readme",
+  "bugs": "https://github.com/memori-ai/avatar-creator/issues",
+  "repository": "https://github.com/memori-ai/avatar-creator.git",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "bun run src/dev.tsx",
     "lint": "biome check .",
