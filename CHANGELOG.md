@@ -1,5 +1,12 @@
 
 
+## [0.1.1](https://github.com/memori-ai/avatar-creator/compare/v0.1.0...v0.1.1) (2026-01-15)
+
+
+### Maintenance
+
+* add build setup ([f45df7c](https://github.com/memori-ai/avatar-creator/commit/f45df7cf23459175b6fefeb537326016bbd0bc30))
+
 ## 0.1.0 (2026-01-15)
 
 
