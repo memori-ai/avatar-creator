@@ -1,5 +1,8 @@
 {
   "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "hooks": {
+    "after:bump": "bun run build"
+  },
   "git": {
     "tagName": "v${version}",
     "commitMessage": "chore: release v${version}"

@@ -2,14 +2,20 @@
   "name": "@memori.ai/avatar-creator",
   "author": "Memori Srl",
   "version": "0.1.0",
-  "module": "src/index.tsx",
+  "main": "dist/memori-ai-avatar-creator.umd.js",
+  "module": "dist/memori-ai-avatar-creator.es.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "exports": {
-    ".": "./src/index.tsx",
+    ".": {
+      "import": "./dist/memori-ai-avatar-creator.es.js",
+      "require": "./dist/memori-ai-avatar-creator.umd.js"
+    },
     "./styles.css": "./src/styles.css"
   },
   "files": [
     "src",
+    "dist",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
@@ -27,6 +33,7 @@
     "lint": "biome check .",
     "fix": "biome check --write .",
     "check:staged": "biome check --staged",
+    "build": "vite build",
     "release": "bunx release-it",
     "prepare": "bunx lefthook install || true"
   },
@@ -37,11 +44,20 @@
     "@release-it/conventional-changelog": "^8.0.2",
     "@types/bun": "latest",
     "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.0",
+    "babel-plugin-react-compiler": "^1.0.0",
     "lefthook": "^2.0.15",
-    "release-it": "^19.2.3"
+    "release-it": "^19.2.3",
+    "vite": "npm:rolldown-vite@7.2.5",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "dependencies": {
     "@memori.ai/memori-react": "^8.13.5"
