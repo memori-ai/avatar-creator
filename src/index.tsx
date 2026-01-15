@@ -2,7 +2,7 @@ import ModelViewer from '@memori.ai/memori-react/src/components/CustomGLBModelVi
 import Button from '@memori.ai/memori-react/src/components/ui/Button'
 import { useState } from 'react'
 
-const avatars = {
+const fallbackAvatars = {
   MALE: [
     'https://assets.memori.ai/api/v2/asset/d9b69591-cc12-4e76-b91c-e8b00251dedc.glb',
     'https://assets.memori.ai/api/v2/asset/d9b69591-cc12-4e76-b91c-e8b00251dedc.glb',
@@ -14,11 +14,19 @@ const avatars = {
 }
 
 interface Props {
+  avatars: {
+    FEMALE: string[]
+    MALE: string[]
+  }
   lang: 'it' | 'en'
   onSelect: (avatar: string) => void
 }
 
-const AvatarCreator: React.FC<Props> = ({ lang, onSelect }) => {
+const AvatarCreator: React.FC<Props> = ({
+  avatars = fallbackAvatars,
+  lang,
+  onSelect,
+}) => {
   const [genderFilter, setGenderFilter] = useState<
     'MALE' | 'FEMALE' | undefined
   >()

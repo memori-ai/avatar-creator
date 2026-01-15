@@ -24,6 +24,7 @@
     "@commitlint/config-conventional": "^20.3.0",
     "@release-it/conventional-changelog": "^10.0.4",
     "@types/bun": "latest",
+    "@types/react": "^19.2.8",
     "lefthook": "^2.0.15",
     "release-it": "^19.2.3"
   },
