@@ -2,6 +2,8 @@ import ModelViewer from '@memori.ai/memori-react/src/components/CustomGLBModelVi
 import Button from '@memori.ai/memori-react/src/components/ui/Button'
 import { useState } from 'react'
 
+import './styles.css'
+
 const fallbackAvatars = {
   MALE: [
     'https://assets.memori.ai/api/v2/asset/d9b69591-cc12-4e76-b91c-e8b00251dedc.glb',
