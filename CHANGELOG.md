@@ -1,5 +1,12 @@
 
 
+## [0.1.3](https://github.com/memori-ai/avatar-creator/compare/v0.1.2...v0.1.3) (2026-01-16)
+
+
+### Maintenance
+
+* fix css export ([2a5654c](https://github.com/memori-ai/avatar-creator/commit/2a5654c24ac77fb53e87b5288d72ea3363a10a6e))
+
 ## [0.1.2](https://github.com/memori-ai/avatar-creator/compare/v0.1.1...v0.1.2) (2026-01-16)
 
 
