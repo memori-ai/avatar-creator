@@ -11,7 +11,7 @@
       "import": "./dist/memori-ai-avatar-creator.es.js",
       "require": "./dist/memori-ai-avatar-creator.umd.js"
     },
-    "./styles.css": "./src/styles.css"
+    "./styles.css": "./dist/memori-ai-avatar-creator.css"
   },
   "files": [
     "src",
