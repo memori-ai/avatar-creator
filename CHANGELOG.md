@@ -1,5 +1,12 @@
 
 
+## [0.1.2](https://github.com/memori-ai/avatar-creator/compare/v0.1.1...v0.1.2) (2026-01-16)
+
+
+### Maintenance
+
+* add css into build output ([601dc1a](https://github.com/memori-ai/avatar-creator/commit/601dc1ae1ac3175023e0d54302c862410b735eb9))
+
 ## [0.1.1](https://github.com/memori-ai/avatar-creator/compare/v0.1.0...v0.1.1) (2026-01-15)
 
 
